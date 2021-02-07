@@ -1,0 +1,19 @@
+---
+title: "second repo"
+author: "Josie Hibble"
+date: "06/02/2021"
+output: html_document
+---
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+source("README.md")
+library(tidyverse)
+library(plotly)
+library(palmerpenguins)
+penguin_graph
+ggplotly(penguin_graph, tooltip = c("species"))
+```
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
